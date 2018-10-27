@@ -1,0 +1,50 @@
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 22DA-7A61
+
+ C:\Users\KimTaehyung\Desktop\Project ISD_2DMobile\Assets\Resources\Scripts 디렉터리
+
+2016-06-24  오전 11:42    <DIR>          .
+2016-06-24  오전 11:42    <DIR>          ..
+2016-06-24  오전 11:42                 0 filelist.txt
+2016-06-16  오후 03:05    <DIR>          ManagerClass
+2016-06-16  오후 01:34    <DIR>          Objects
+2016-06-16  오후 03:13    <DIR>          SceneClass
+               1개 파일                   0 바이트
+
+ C:\Users\KimTaehyung\Desktop\Project ISD_2DMobile\Assets\Resources\Scripts\ManagerClass 디렉터리
+
+2016-06-16  오후 03:05    <DIR>          .
+2016-06-16  오후 03:05    <DIR>          ..
+2016-06-16  오전 03:37             1,076 GameManager.cs
+2016-06-16  오후 01:47             5,340 MusicManager.cs
+2016-06-16  오후 03:05             1,815 SceneManager.cs
+2016-06-16  오후 01:45             1,426 SoundManager.cs
+2016-06-16  오전 08:17             2,007 XmlTools.cs
+               5개 파일              11,664 바이트
+
+ C:\Users\KimTaehyung\Desktop\Project ISD_2DMobile\Assets\Resources\Scripts\Objects 디렉터리
+
+2016-06-16  오후 01:34    <DIR>          .
+2016-06-16  오후 01:34    <DIR>          ..
+2016-06-16  오전 08:17             1,791 Monster.cs
+2016-06-16  오후 01:34             4,283 Note.cs
+               2개 파일               6,074 바이트
+
+ C:\Users\KimTaehyung\Desktop\Project ISD_2DMobile\Assets\Resources\Scripts\SceneClass 디렉터리
+
+2016-06-16  오후 03:13    <DIR>          .
+2016-06-16  오후 03:13    <DIR>          ..
+2016-06-16  오후 01:50             7,009 DifficultyScene.cs
+2016-06-16  오전 05:19             1,892 LoadingScene.cs
+2016-06-16  오후 03:13               537 LogoScene.cs
+2016-06-16  오후 01:49             3,917 MainScene.cs
+2016-06-16  오후 01:47             1,180 MusicSelectScene.cs
+2016-06-16  오후 03:01             6,281 PlayScene.cs
+2016-06-16  오후 01:49             1,330 ResultScene.cs
+2015-11-16  오후 11:07               228 Scene.cs
+2016-06-16  오전 09:44             2,174 TitleScene.cs
+               9개 파일              24,548 바이트
+
+     전체 파일:
+              17개 파일              42,286 바이트
+              11개 디렉터리  49,269,260,288 바이트 남음
