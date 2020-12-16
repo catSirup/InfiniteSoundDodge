@@ -36,6 +36,7 @@ public class PlayScene : Scene {
     [SerializeField]
     private Text lifeText;
     public static int life;
+    public static int maxLife;
 
     [SerializeField]
     private Text score_Text;
@@ -44,7 +45,15 @@ public class PlayScene : Scene {
     
     public override void Initialize()
     {
-        life = 2;
+        if (DifficultyScene.curDiff == DIFFICULTY.EASY)
+            maxLife = 10;
+        else if (DifficultyScene.curDiff == DIFFICULTY.NORMAL)
+            maxLife = 5;
+        else if (DifficultyScene.curDiff == DIFFICULTY.HARD)
+            maxLife = 2;
+
+        life = maxLife;
+        
         score = 0;
         audioTime = 0;
         monster.Init();
@@ -81,7 +90,7 @@ public class PlayScene : Scene {
             window.SetActive(false);
 
         // 플레이어 라이프
-        playerLife.rectTransform.sizeDelta = new Vector2(250 - 250 / 3 * (2 - life) , 20);
+        playerLife.rectTransform.sizeDelta = new Vector2(250 - 250 / maxLife * (maxLife - life) , 20);
         lifeText.text = ((int)((playerLife.rectTransform.sizeDelta.x / 250) * 100)).ToString() + "%";
 
         // 몬스터 라이프
@@ -103,9 +112,9 @@ public class PlayScene : Scene {
                 current_Bar.sizeDelta = new Vector2(((audioTime / SoundManager.soundMgr.audioSource.clip.length) * 1280), 20);
             }
 
-            if (SoundManager.soundMgr.audioSource.time == 0 && b_ending && time > 3.0f || life < 0)
+            if (SoundManager.soundMgr.audioSource.time == 0 && b_ending && time > 3.0f || life <= 0)
             {
-                //SceneManager.sceneMgr.ChangeScene(SceneState.RESULT);
+                SceneManager.sceneMgr.ChangeScene(SceneState.RESULT);
             }
         }
 

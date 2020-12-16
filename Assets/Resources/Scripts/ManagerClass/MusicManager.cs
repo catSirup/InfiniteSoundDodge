@@ -84,7 +84,7 @@ public class MusicManager : MonoBehaviour {
             musics[i].transform.position = new Vector3(transform.position.x + (i * 7), transform.position.y + i * 3, i * 2.5f);
             musics[i].name = musicCover[i].name;
             musics[i].transform.parent = transform;
-            musics[i].transform.FindChild("Cover").GetComponent<Renderer>().material.mainTexture = musicCover[i];
+            musics[i].transform.Find("Cover").GetComponent<Renderer>().material.mainTexture = musicCover[i];
             originPos[i] = musics[i].transform.position;
         }
     }

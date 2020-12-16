@@ -67,8 +67,8 @@ public class Note : MonoBehaviour {
         if ((time > 0 && time < 0.3f) || (time > 0.95f && time > 1.0f))
         {
             PlayScene.score += 0;
-            Destroy(gameObject.transform.FindChild("Ring").gameObject);
-            Destroy(gameObject.transform.FindChild("Note").GetComponent<Collider>());
+            Destroy(gameObject.transform.Find("Ring").gameObject);
+            Destroy(gameObject.transform.Find("Note").GetComponent<Collider>());
         }
 
         else if ((time >= 0.3f && time <= 0.4f) || (time >= 0.8f && time <= 0.95f))
@@ -124,7 +124,7 @@ public class Note : MonoBehaviour {
         AudioSource.PlayClipAtPoint(SoundManager.soundMgr.esList["Attack"], Camera.main.transform.position);
         Destroy(ring);
         float time = 0;
-        transform.FindChild("Note").GetComponent<MeshRenderer>().material.shader = Shader.Find("ColorChanage");
+        transform.Find("Note").GetComponent<MeshRenderer>().material.shader = Shader.Find("ColorChanage");
 
         while (true)
         {
